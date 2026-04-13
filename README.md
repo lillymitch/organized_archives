@@ -41,14 +41,6 @@ Bias considerations:
 We will acknowledge these limitations and treat predictions as assistive, not authoritative.
 ## Tentative Timeline
 Weeks 1-2 (now → April 26):
-  Obtain and inspect dataset
-  Clean and preprocess data
-  Define time period categories
-  Implement basic TF-IDF + simple model
-  Goal: produce a working baseline model with initial results
+  Obtain and inspect dataset, clean and preprocess data. define time period categories, implement basic TF-IDF + simple model, Goal: produce a working baseline model with initial results
 Weeks 3-4 (April 27-May 15)
-  Improve model (tuning, feature selection)
-  Evaluate performance (accuracy, confusion matrix)
-  Conduct error analysis
-  Create visualizations
-  Write the final report and prepare the notebook
+Improve model (tuning, feature selection), evaluate performance (accuracy, confusion matrix), conduct error analysis, create visualizations, write the final report and prepare the notebook
