@@ -4,7 +4,7 @@ This project addresses the problem of organizing museum collections by predictin
 ## Motivation and Question
 We have access to a large dataset of museum artifacts from the Metropolitan Museum of Art, including images that can be retrieved via object IDs through the museum’s public API. Our motivation is our eagerness to determine whether visual features of an artwork can accurately predict its medium. This project is interesting because it explores whether machine learning can learn the artistic and material distinctions within our images. This model could help museums automatically categorize new or uncataloged works.
 ## Planned Deliverables
-#Full Success
+### Full Success
 
 We will create:
 * A Python codebase implementing:
@@ -20,7 +20,7 @@ We will create:
  *     Basic error analysis (eg. MSE)
 The final system will take an image of an artwork as input and output a predicted medium category.
 
---Partial Success (Contingency Plan)--
+### Partial Success (Contingency Plan)
 
 If the model does not perform well:
 * We will produce a working pipeline for:
