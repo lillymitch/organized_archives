@@ -19,7 +19,7 @@ Full Success
 We will create
 
 * A Python codebase implementing
-  * a data acquisition pipeline (retrieving image URLs via the Met API)
+ * a data acquisition pipeline (retrieving image URLs via the Met API)
   * image preprocessing and feature extraction
   * a classification model that predicts artwork medium
 
