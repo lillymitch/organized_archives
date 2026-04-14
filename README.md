@@ -14,7 +14,7 @@ This project explores whether machine learning can learn artistic and material d
 
 ## Planned Deliverables
 
-Full Success
+### Full Success
 
 We will create a Python codebase that includes:
 
@@ -35,7 +35,7 @@ Evaluation outputs will include:
 
 The final system will take an image of an artwork as input and output a predicted medium category.
 
-Partial Success (Contingency Plan)
+### Partial Success (Contingency Plan)
 
 If the model does not perform well, we will still build a pipeline that includes:
 
