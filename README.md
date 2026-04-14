@@ -8,7 +8,7 @@ We have access to a large dataset of museum artifacts from the Metropolitan Muse
 
 We will create:
 * A Python codebase implementing:
- *     Data acquisition pipeline (retrieving image URLs via the Met API)
+ *  Data acquisition pipeline (retrieving image URLs via the Met API)
  *     Image preprocessing and feature extraction
  *     A classification model to predict artwork medium
 * A Colab notebook demonstrating:
