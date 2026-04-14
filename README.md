@@ -16,49 +16,77 @@ This project explores whether machine learning can learn artistic and material d
 
 Full Success
 
-We will create a Python codebase that includes a data acquisition pipeline (retrieving image URLs via the Met API), image preprocessing and feature extraction, and a classification model that predicts artwork medium.
+We will create a Python codebase that includes:
 
-We will also create a Colab notebook that shows how the dataset is created and cleaned, along with model training and evaluation.
+* a data acquisition pipeline (retrieving image URLs via the Met API)  
+* image preprocessing and feature extraction  
+* a classification model that predicts artwork medium  
 
-Evaluation outputs will include accuracy scores, a confusion matrix, and basic error analysis (e.g., MSE).
+We will also create a Colab notebook that includes:
+
+* dataset creation and cleaning  
+* model training and evaluation  
+
+Evaluation outputs will include:
+
+* accuracy scores  
+* a confusion matrix  
+* basic error analysis (e.g., MSE)  
 
 The final system will take an image of an artwork as input and output a predicted medium category.
 
 Partial Success (Contingency Plan)
 
-If the model does not perform well, we will still build a working pipeline for retrieving and preprocessing images, extracting features using a pretrained model, and training a classifier.
+If the model does not perform well, we will still build a pipeline that includes:
 
-We will analyze limitations such as dataset size, class imbalance, or unclear labels, and the final result will demonstrate a complete ML workflow and areas for improvement.
+* retrieving and preprocessing images  
+* extracting features using a pretrained model  
+* training a classifier  
+
+We will also:
+
+* analyze limitations such as dataset size, class imbalance, or unclear labels  
 
 ## Resources Required
 
 Data
 
-Metropolitan Museum of Art Open Access dataset  
-https://github.com/metmuseum/openaccess  
-
-Images retrieved via the Met Collection API using object IDs  
+* Metropolitan Museum of Art Open Access dataset  
+  https://github.com/metmuseum/openaccess  
+* images retrieved via the Met Collection API using object IDs  
 
 The dataset includes images of artworks as features and medium labels (simplified into categories) as targets.
 
 Tools
 
-Python  
-pandas, numpy  
-pytorch or tensorflow  
-Google Colab  
+* Python  
+* pandas, numpy  
+* pytorch or tensorflow  
+* Google Colab  
 
 ## What You Will Learn
 
-Through this project, we aim to learn how to collect and preprocess image data from an API, how to use pretrained convolutional neural networks, how to apply classification models to image data, how dataset quality affects performance, and how to build a full machine learning pipeline.
+Through this project, we aim to learn:
+
+* how to collect and preprocess image data from an API  
+* how to use pretrained convolutional neural networks  
+* how to apply classification models to image data  
+* how dataset quality affects performance  
+* how to build a full machine learning pipeline  
 
 ## Risk Statement
 
-Limited or inconsistent image data: not all objects have images, and some may be low quality.
+Limited or inconsistent image data  
+Not all objects have images, and some may be low quality  
 
-Noisy or ambiguous medium labels: the “Medium” field varies a lot and needs simplification.
+Noisy or ambiguous medium labels  
+The “Medium” field varies a lot and needs simplification  
 
-To address this, we will filter for objects with valid images, simplify medium labels, and start with a smaller, cleaner subset of the data.
+To address this, we will:
+
+* filter for objects with valid images  
+* simplify medium labels  
+* start with a smaller, cleaner subset  
 
 ## Ethics Statement
 
@@ -66,33 +94,38 @@ If successful, this project could help improve how museum collections are organi
 
 Who benefits
 
-Museums organizing digital archives  
-Researchers and students  
+* museums organizing digital archives  
+* researchers and students  
 
 Who might be affected
 
-Underrepresented cultures if the dataset is biased  
-Artifacts that get misclassified  
+* underrepresented cultures if the dataset is biased  
+* artifacts that get misclassified  
 
 We assume that visual features relate to medium and that automation improves access to knowledge.
 
-Bias considerations include overrepresentation of Western art, imbalance across medium categories, and weaker performance on less common classes. We will treat predictions as assistive, not definitive.
+Bias considerations include:
+
+* overrepresentation of Western art  
+* imbalance across medium categories  
+* weaker performance on less common classes  
+
+We will treat predictions as assistive, not definitive.
 
 ## Tentative Timeline
 
 Weeks 1-2 (now to April 26)
 
-Load and explore dataset  
-Retrieve images  
-Clean and simplify labels  
-Extract features  
-Train a basic model  
+* load and explore dataset  
+* retrieve images  
+* clean and simplify labels  
+* extract features  
+* train a basic model  
 
 Goal: get a working baseline model
 
 Weeks 3-4 (April 27 to May 15)
 
-Improve model  
-Evaluate performance  
-Perform error analysis
-
+* improve model  
+* evaluate performance  
+* perform error analysis  
