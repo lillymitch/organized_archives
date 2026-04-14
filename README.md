@@ -1,10 +1,10 @@
 Group Members: Lilly Mitchell and Zach Okayli-Masaryk
 ## Abstract
-This project addresses the problem of organizing museum collections by predicting the medium of artworks using image data. We will use images associated with artworks from the Metropolitan Museum of Art dataset and apply machine learning techniques, specifically image classification using transfer learning, to classify each artwork into a simplified set of medium categories (e.g., oil painting, watercolor, ceramic). Image features will be extracted using a pretrained convolutional neural network, and a classifier will be trained on these features. Success will be evaluated based on classification accuracy and analysis of model performance across medium categories.
+This project addresses the problem of organizing museum collections by predicting the medium of artworks using image data. We will use images associated with artworks from the Metropolitan Museum of Art dataset and apply machine learning techniques, specifically image classification using transfer learning, to classify each artwork into a simplified set of medium categories (e.g., oil painting, watercolor, ceramic). Image features will be extracted using a convolutional neural network, and a classifier will be trained on these features. Success will be evaluated based on classification accuracy and analysis of model performance across medium categories.
 ## Motivation and Question
-We have access to a large dataset of museum artifacts from the Metropolitan Museum of Art, which includes metadata and object IDs that can be used to retrieve associated images through the museum’s public API. While metadata provides useful information, visual characteristics are often more directly tied to an artwork’s medium. This motivates the question: To what extent can visual features of an artwork be used to accurately predict its medium? This project is interesting because it explores whether machine learning can learn meaningful artistic and material distinctions (e.g., paint vs. sculpture) directly from images. Such a model could help museums automatically categorize new or uncataloged works and improve digital organization systems.
+We have access to a large dataset of museum artifacts from the Metropolitan Museum of Art, including images that can be retrieved via object IDs through the museum’s public API. Our motivation is our eagerness to determine whether visual features of an artwork can accurately predict its medium. This project is interesting because it explores whether machine learning can learn the artistic and material distinctions within our images. This model could help museums automatically categorize new or uncataloged works.
 ## Planned Deliverables
-Full Success
+--Full Success--
 We will create:
 * A Python codebase implementing:
  *     Data acquisition pipeline (retrieving image URLs via the Met API)
@@ -16,11 +16,11 @@ We will create:
 * Evaluation outputs including:
  *     Accuracy scores
  *     Confusion matrix
- *     Basic error analysis
+ *     Basic error analysis (eg. MSE)
 The final system will take an image of an artwork as input and output a predicted medium category.
-Partial Success (Contingency Plan)
+--Partial Success (Contingency Plan)--
 If the model does not perform well:
-* We will still produce a working pipeline for:
+* We will produce a working pipeline for:
  *     retrieving and preprocessing images
  *     extracting features using a pretrained model
  *     training a classifier
@@ -37,8 +37,7 @@ The dataset includes:
 Tools:
 * Python
 * pandas, numpy
-* scikit-learn
-* (optional) PyTorch or TensorFlow for image feature extraction
+* pytorch or TensorFlow for image feature extraction
 * Google Colab
 ## What You Will Learn
 Through this project, we aim to learn:
