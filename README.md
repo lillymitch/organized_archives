@@ -7,23 +7,23 @@ We have access to a large dataset of museum artifacts from the Metropolitan Muse
 Full Success
 We will create:
 * A Python codebase implementing:
-*    Data acquisition pipeline (retrieving image URLs via the Met API)
-*    Image preprocessing and feature extraction
-*    A classification model to predict artwork medium
+*  Data acquisition pipeline (retrieving image URLs via the Met API)
+*  Image preprocessing and feature extraction
+*  A classification model to predict artwork medium
 * A Colab notebook demonstrating:
-*    Dataset creation and cleaning
-*    Model training and evaluation
+*  Dataset creation and cleaning
+*  Model training and evaluation
 * Evaluation outputs including:
-*    Accuracy scores
-*    Confusion matrix
-*    Basic error analysis
+*  Accuracy scores
+*  Confusion matrix
+*  Basic error analysis
 The final system will take an image of an artwork as input and output a predicted medium category.
 Partial Success (Contingency Plan)
 If the model does not perform well:
 * We will still produce a working pipeline for:
-*    retrieving and preprocessing images
-*    extracting features using a pretrained model
-*    training a classifier
+*  retrieving and preprocessing images
+*  extracting features using a pretrained model
+*  training a classifier
 * We will analyze limitations such as dataset size, class imbalance, or ambiguous labels
 * The final deliverable will demonstrate a complete ML workflow and identify areas for improvement
 ## Resources Required
