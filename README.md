@@ -1,3 +1,4 @@
+```markdown
 # Project Proposal
 
 ## Group Members
@@ -5,12 +6,12 @@ Lilly Mitchell
 Zach Okayli-Masaryk  
 
 ## Abstract
-This project addresses the problem of organizing museum collections by predicting the medium of artworks using image data. We will use images associated with artworks from the Metropolitan Museum of Art dataset and apply machine learning techniques, specifically image classification using transfer learning, to classify each artwork into a simplified set of medium categories (e.g., oil painting, watercolor, ceramic). Image features will be extracted using a convolutional neural network, and a classifier will be trained on these features. Success will be evaluated based on classification accuracy and analysis of model performance across medium categories.
+This project addresses the problem of classifying artistic styles using image data. We will use artwork images from the WikiArt dataset and apply machine learning techniques, specifically image classification using convolutional neural networks, to classify each artwork into a simplified set of artistic style categories (e.g., Impressionism, Cubism, Baroque, Realism, Expressionism). Image features will be extracted using convolutional neural networks, and classifiers will be trained on these features. Success will be evaluated based on classification accuracy and analysis of model performance across artistic style categories.
 
 ## Motivation and Question
-We have access to a large dataset of museum artifacts from the Metropolitan Museum of Art, including images that can be retrieved via object IDs through the museum’s public API. Our motivation is to see whether visual features of an artwork can actually predict its medium.
+We have access to a large dataset of artwork images from the WikiArt dataset, including labeled artistic styles. Our motivation is to see whether visual features of an artwork can actually predict its artistic style.
 
-This project explores whether machine learning can learn artistic and material differences directly from images. A model like this could help museums automatically categorize new or uncataloged works.
+This project explores whether machine learning can learn artistic and stylistic differences directly from images. A model like this could help museums, archives, or educational tools automatically categorize artworks by style.
 
 ## Planned Deliverables
 
@@ -18,9 +19,9 @@ This project explores whether machine learning can learn artistic and material d
 
 We will create a Python codebase that includes:
 
-* a data acquisition pipeline (retrieving image URLs via the Met API)  
-* image preprocessing and feature extraction  
-* a classification model that predicts artwork medium  
+* image loading and preprocessing  
+* image augmentation and feature extraction  
+* classification models that predict artistic style  
 
 We will also create a Colab notebook that includes:
 
@@ -31,45 +32,44 @@ Evaluation outputs will include:
 
 * accuracy scores  
 * a confusion matrix  
-* basic error analysis (e.g., MSE)  
+* basic error analysis  
 
-The final system will take an image of an artwork as input and output a predicted medium category.
+The final system will take an image of an artwork as input and output a predicted artistic style category.
 
 ### Partial Success (Contingency Plan)
 
 If the model does not perform well, we will still build a pipeline that includes:
 
-* retrieving and preprocessing images  
-* extracting features using a pretrained model  
-* training a classifier  
+* loading and preprocessing images  
+* extracting features using convolutional neural networks  
+* training classification models  
 
 We will also:
 
-* analyze limitations such as dataset size, class imbalance, or unclear labels  
+* analyze limitations such as dataset size, class imbalance, or visually similar styles  
 
 ## Resources Required
 
-Data
+### Data
 
-* Metropolitan Museum of Art Open Access dataset  
-  https://github.com/metmuseum/openaccess  
-* images retrieved via the Met Collection API using object IDs  
+* WikiArt dataset from Hugging Face  
+  https://huggingface.co/datasets/huggan/wikiart  
 
-The dataset includes images of artworks as features and medium labels (simplified into categories) as targets.
+The dataset includes images of artworks as features and artistic style labels as targets.
 
-Tools
+### Tools
 
 * Python  
 * pandas, numpy  
-* pytorch or tensorflow  
+* pytorch  
 * Google Colab  
 
 ## What You Will Learn
 
 Through this project, we aim to learn:
 
-* how to collect and preprocess image data from an API  
-* how to use pretrained convolutional neural networks  
+* how to preprocess image data for deep learning  
+* how convolutional neural networks learn visual features  
 * how to apply classification models to image data  
 * how dataset quality affects performance  
 * how to build a full machine learning pipeline  
@@ -77,55 +77,56 @@ Through this project, we aim to learn:
 ## Risk Statement
 
 Limited or inconsistent image data  
-Not all objects have images, and some may be low quality  
+Some artwork images may be low quality or difficult to classify visually  
 
-Noisy or ambiguous medium labels  
-The “Medium” field varies a lot and needs simplification  
+Noisy or ambiguous style labels  
+Some artistic styles overlap visually and may be difficult to separate  
 
 To address this, we will:
 
-* filter for objects with valid images  
-* simplify medium labels  
+* simplify artistic style labels  
+* use image preprocessing and augmentation  
 * start with a smaller, cleaner subset  
 
 ## Ethics Statement
 
-If successful, this project could help improve how museum collections are organized and accessed.
+If successful, this project could help improve how digital artwork collections are organized and accessed.
 
-Who benefits
+### Who benefits
 
 * museums organizing digital archives  
 * researchers and students  
 
-Who might be affected
+### Who might be affected
 
-* underrepresented cultures if the dataset is biased  
-* artifacts that get misclassified  
+* underrepresented artistic traditions if the dataset is biased  
+* artworks that get misclassified  
 
-We assume that visual features relate to medium and that automation improves access to knowledge.
+We assume that visual features relate to artistic style and that automation improves access to knowledge.
 
 Bias considerations include:
 
 * overrepresentation of Western art  
-* imbalance across medium categories  
+* imbalance across artistic style categories  
 * weaker performance on less common classes  
 
 We will treat predictions as assistive, not definitive.
 
 ## Tentative Timeline
 
-Weeks 1-2 (now to April 26)
+### Weeks 1-2 (now to April 26)
 
 * load and explore dataset  
-* retrieve images  
+* preprocess images  
 * clean and simplify labels  
-* extract features  
-* train a basic model  
+* implement baseline models  
+* train a convolutional neural network  
 
 Goal: get a working baseline model
 
-Weeks 3-4 (April 27 to May 15)
+### Weeks 3-4 (April 27 to May 15)
 
 * improve model  
 * evaluate performance  
-* perform error analysis  
+* perform error analysis
+```
