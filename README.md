@@ -1,4 +1,3 @@
-```markdown
 # Project Proposal
 
 ## Group Members
@@ -129,4 +128,3 @@ Goal: get a working baseline model
 * improve model  
 * evaluate performance  
 * perform error analysis
-```
